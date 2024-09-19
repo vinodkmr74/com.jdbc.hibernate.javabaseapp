@@ -19,6 +19,7 @@ public class Studentmain {
 		
 		Student s=new Student(1,"rajhana","rajhana@123.com","B-tech");
 		Student s2=new Student(2,"raj","raj@123.com","B-tech");
+		Student s3=new Student(3,"raju","raju@123.com","B-tech");
 		
 		//Configuration cfg=new Configuration().configure();
 //		StandardServiceRegistry ssr=new StandardServiceRegistryBuilder().configure().build();
@@ -33,6 +34,7 @@ public class Studentmain {
 		Transaction tx=session.beginTransaction();
 		session.save(s);
 		session.save(s2);
+		session.save(s3);
 		tx.commit();
 		
 		
