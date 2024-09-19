@@ -1,13 +1,24 @@
 package hibernate.student;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+//Table name chenge
+//@Entity(name="Acg_Student")
 @Entity
 public class Student {
 	
+	//Id Auto generated
+	//@GeneratedValue(strategy=GenerationType.IDENTITY)
+	
 	@Id
 	private int id;
+	
+	//column chenge
+	//@Column(name="S_Name")
 	private String name;
 	private String email;
 	private String department;
